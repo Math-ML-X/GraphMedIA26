@@ -404,6 +404,9 @@ Montoya-Zegarra</a>
 <h2>Lecture Detail</h2>
 <br>
 <p>
+<p><strong>Module I: Foundations of Graph Learning for Medical Imaging</strong></p>
+
+<p>
 Lecture 1: Semi-Supervised Graph Learning for Medical Image Analysis <br>
 <span style="font-weight:lighter"><u>Speaker: Angelica I Aviles-Rivero, Tsinghua University</u><br>
 Deep supervised learning is the go-to technique for most state-of-the-art results in tasks such as
@@ -415,55 +418,103 @@ We will cover, from a minimal supervision perspective: i) classic models includi
 of energy models and need to develop better functionals, ii) hybrid approaches to intertwine classic
 and deep learning techniques for generating robust solutions. Theory will be accompanied by
 real-world examples.
-
 </span></p>
 
 <p>
 Lecture 2: Graph Neural Network<br>
 <span style="font-weight:lighter"><u>Speaker: Yanqi Cheng, University of Cambridge</u><br>
-In the realm of data-rich relationships, diverse
-applications require models adept at learning from graph inputs. Graph Neural Networks (GNNs),
-specialised neural models, excel in capturing graph dependencies through message passing among
-nodes, playing a pivotal role in addressing challenges across various domains. Recent
-advancements in GNNs have enhanced their capabilities and expressive power. We will delve into
+In the realm of data-rich relationships, diverse applications require models adept at learning from graph inputs.
+Graph Neural Networks (GNNs), specialised neural models, excel in capturing graph dependencies through
+message passing among nodes, playing a pivotal role in addressing challenges across various domains.
+Recent advancements in GNNs have enhanced their capabilities and expressive power. We will delve into
 the basics of graphs, challenges associated with computing over graphs, elucidate the origins and
 design principles behind graph neural networks, explore recent variants, and investigate their
 applications across different domains.
-
 </span></p>
+
+<p><strong>Module II: Advanced Architectures for Structured Medical Data</strong></p>
 
 <p>
 Lecture 3: Graph Transformer<br>
-<span style="font-weight:lighter"><u>Speaker: Chun-Wun (Sam) Cheng, University of Cambridge </u><br>
-Graph neural networks (GNNs) have been widely used in representation learning on graphs and achieved state-of-the-art performance in tasks such as node classification. However, most existing GNNs are designed to learn node representations on the fixed and homogeneous graphs. Transformer model has demonstrated its great potential in modelling graph-structured data. Till now, a great variety of Transformers has been proposed to adapt to the data. We first disassemble the existing models and conclude three typical ways to incorporate the graph information into the vanilla Transformer. Afterwards we will look at novel architectures for solving inverse problems and how specific demands of the problems can be implemented in the underlying neural network architecture. 
+<span style="font-weight:lighter"><u>Speaker: Chun-Wun (Sam) Cheng, University of Cambridge</u><br>
+Graph neural networks (GNNs) have been widely used in representation learning on graphs and achieved
+state-of-the-art performance in tasks such as node classification. However, most existing GNNs are designed
+to learn node representations on fixed and homogeneous graphs. Transformer model has demonstrated its
+great potential in modelling graph-structured data. Till now, a great variety of Transformers has been
+proposed to adapt to the data. We first disassemble the existing models and conclude three typical ways
+to incorporate the graph information into the vanilla Transformer. Afterwards we will look at novel
+architectures for solving inverse problems and how specific demands of the problems can be implemented
+in the underlying neural network architecture.
 </span></p>
 
 <p>
 Lecture 4: Higher-Order Learning -- Hypergraph Computation for Medical Data<br>
 <span style="font-weight:lighter"><u>Speaker: Yue Gao, Tsinghua University</u><br>
-Graph learning and graph neural networks have attracted much attention in both research and industrial fields and become very hot topics in these years. It is noted that the world is far more complex than just pairwise connections. Hypergraph, as a generation of graphs, is able to formulate such high-order correlations among the data and has been investigated in last decades. In this part, we first introduce the basic concepts and characteristics of hypergraphs. Next, focusing on hypergraph computation, we introduce hypergraph structural modelling, hypergraph structural evolution, and hypergraph neural network models. Finally, we introduce the application of hypergraph computation for medical data.
+Graph learning and graph neural networks have attracted much attention in both research and industrial
+fields and become very hot topics in these years. It is noted that the world is far more complex than just
+pairwise connections. Hypergraph, as a generation of graphs, is able to formulate such high-order
+correlations among the data and has been investigated in last decades. In this part, we first introduce
+the basic concepts and characteristics of hypergraphs. Next, focusing on hypergraph computation, we
+introduce hypergraph structural modelling, hypergraph structural evolution, and hypergraph neural
+network models. Finally, we introduce the application of hypergraph computation for medical data.
 </span></p>
 
-<!-- <p>
-Lecture 5: Graph Learning for MRI Reconstruction<br>
-<span style="font-weight:lighter"><u>Speaker: Jiahao Huang, Imperial College London</u><br>
-Deep learning models have been widely applied for fast MRI. However, the majority of existing deep learning models for MRI reconstruction work on data with Euclidean or regular grids structures, which fail to explore the high-dimensional features encapsulated in non-Euclidean manifolds extracted from MR data. We will first introduce the existing deep learning-based MRI reconstruction models for data with Euclidean structures. Then we will discuss graph-based models for MRI reconstruction task, from the perspective of the reconstruction quality and the intuitive explainability based on the non-Euclidean graph connections.
-</p> -->
+<p><strong>Module III: Mini Hands-On Session and Live Demonstration (30 mins)</strong></p>
 
 <p>
-Lecture 5: Whole slide pathological Image analysis based on hypergraph computation<br>
+Mini Hands-On Session and Live Demonstration<br>
 <span style="font-weight:lighter"><u>Speaker: Xiangmin Han, Tsinghua University</u><br>
-This talk delves into leveraging advanced computational techniques to analyse pathological
-images. By exploring complex high-order correlations within these images, it uncovers critical insights
-into tumour microenvironments and biomarkers. The approach emphasises capturing both intrinsic
-features of individual components and the intricate interactions among them, enabling a more accurate
-and comprehensive representation of pathological subjects.
+For the first time in the history of the GraphMIA tutorial series, we introduce a dedicated hands-on
+session to complement the theoretical modules and strengthen educational impact. Participants will
+engage with state-of-the-art open-source frameworks for hypergraph learning, including THU-HyperG
+and DeepHypergraph. The session will include:
+<br>• Constructing graph and hypergraph representations from medical imaging data
+<br>• Implementing hypergraph neural networks using provided modules
+<br>• Training and evaluating models on a real-world medical task
+<br>• Exploring structural modelling, message passing, and higher-order interactions
+<br>• Understanding scalability and practical implementation considerations
+<br>Pre-prepared Jupyter/Colab notebooks will be provided to ensure accessibility and reproducibility.
+The live coding walkthrough will demonstrate how advanced theoretical concepts translate into
+efficient, research-grade implementations. By the end of this session, participants will have practical
+experience in deploying graph and hypergraph learning pipelines for medical imaging problems.
+</span></p>
+
+<p><strong>Module IV: Emerging Directions in Graph-Based Medical AI</strong></p>
+
+<p>
+Lecture 5: Graph Transformers for Medical Imaging<br>
+<span style="font-weight:lighter"><u>Speaker: Lequan Yu, The University of Hong Kong</u><br>
+Graph Transformers have emerged as a powerful solution in medical imaging, showcasing promising
+capabilities when applied to graph modelling. Experimental results affirm the benefits of integrated
+graph modules within the transformer, demonstrating their efficacy across diverse graph-related tasks.
+In specific applications, we will introduce novel graph transformer frameworks that achieve superior
+accuracy and robustness in Whole Slide Image analysis compared to existing methods.
 </span></p>
 
 <p>
-Lecture 6: Graph Transformers for Medical Imaging<br>
-<span style="font-weight:lighter"><u>Speaker: Lequan Yu, The University of Hong Kong</u><br>
-Graph Transformers have emerged as a powerful solution in medical imaging, showcasing promising capabilities when applied to graph modelling. Experimental results affirm the benefits of integrated graph modules within the transformer, demonstrating their efficacy across diverse graph-related tasks. In specific applications, we will introduce novel graph transformer frameworks that achieve superior accuracy and robustness in Whole Slide Image analysis compared to existing methods.
+Lecture 6: Graph Foundation Models for Medical Image Analysis<br>
+<span style="font-weight:lighter"><u>Speaker: Qingyun Sun, Beihang University</u><br>
+This new lecture introduces graph foundation models, focusing on large-scale pretraining,
+transferability, and generalisation across tasks and modalities. We discuss emerging architectures,
+self-supervised objectives, and opportunities for building unified graph models for medical imaging.
+The lecture will begin by motivating the need for foundation models in medical image analysis, where
+data scarcity, heterogeneity, and domain shifts remain major challenges. We will discuss how medical
+images, spatial structures, multimodal measurements, and clinical metadata can be unified under graph
+representations, enabling pretraining on large, heterogeneous graph collections.
+</span></p>
+
+<p>
+Lecture 7: Graph Agentic Systems for Medical Image Analysis and Precision Medicine<br>
+<span style="font-weight:lighter"><u>Speaker: Emma Shujun Wang, The Hong Kong Polytechnic University</u><br>
+This lecture explores graph agentic systems, an emerging paradigm that integrates graph learning with
+agent-based reasoning to enable adaptive, goal-driven analysis of medical imaging and multimodal
+healthcare data. The lecture will introduce how agentic frameworks can operate over graph-structured
+representations—such as patient similarity graphs, anatomical graphs, and multimodal disease
+networks—to iteratively reason, interact, and make decisions. Emphasis will be placed on
+trustworthiness, interpretability, and clinical reliability, highlighting how graph agentic models can
+support robust medical decision-making, longitudinal patient monitoring, and precision medicine
+applications. Case studies will demonstrate how agentic reasoning over graphs enhances flexibility
+and transparency in complex medical imaging workflows.
 </span></p>
 
 
